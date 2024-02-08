@@ -132,7 +132,7 @@ class Pinterest:
         self.proxies = proxies
         self.user_agent = user_agent
 
-        self.registry = Registry(cred_root, email)
+        self.registry = Registry(cred_root, username)
 
         cookies = self.registry.get_all()
         for key in cookies.keys():
